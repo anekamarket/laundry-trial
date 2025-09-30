@@ -440,11 +440,11 @@
             <form id="loginForm">
                 <div class="form-group">
                     <label for="username" class="form-label">Username</label>
-                    <input type="text" id="username" class="form-control" placeholder="Coba: operator" onpaste="return false;" autocomplete="username">
+                    <input type="text" id="username" class="form-control" placeholder="Username: operator" onpaste="return false;" autocomplete="username">
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" id="password" class="form-control" placeholder="Coba: operator123" onpaste="return false;" autocomplete="current-password">
+                    <input type="password" id="password" class="form-control" placeholder="Password: Gratis12345" onpaste="return false;" autocomplete="current-password">
                 </div>
                 <div class="form-group">
                     <label for="captchaInput" class="form-label">Verifikasi Keamanan</label>
@@ -759,8 +759,8 @@
                 }
             };
             const defaultUsers = [
-                { id: 'U001', username: 'admin', password: CryptoJS.SHA256('admin123').toString(), name: 'Administrator', role: 'admin' },
-                { id: 'U002', username: 'operator', password: CryptoJS.SHA256('operator123').toString(), name: 'Operator', role: 'cashier' }
+                { id: 'U001', username: 'admin', password: CryptoJS.SHA256('Admin.1945').toString(), name: 'Administrator', role: 'admin' },
+                { id: 'U002', username: 'operator', password: CryptoJS.SHA256('Gratis12345').toString(), name: 'Operator', role: 'cashier' }
             ];
 
             if (!localStorage.getItem(STORAGE_KEYS.USERS)) localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(defaultUsers));
